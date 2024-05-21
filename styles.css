@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+
+*{margin: 0; padding:0; box-sizing: border-box;}
+html{ height: 100%; line-height: 1.5; font-size: 55%; font-weight: bold; font-family: Arial,Helvetica,sans-serif;}
+/*Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+
+body{
+	background: #FFFFFF;
+	-moz-background: #FFFFFF;
+	-webkit-background: #FFFFFF;
+	-o-background: #FFFFFF;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-size: 20px;
+}
+
+
+#f-block,
+#periodic-table{
+    display: block;
+    width: 100%;
+}
+#f-block:after ,
+#periodic-table:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+#descriptions {
+	width: 90%;
+	max-width:1500px;
+    text-align: center;
+	margin: 0 auto;
+}
+#descriptions .info{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+	transition: opacity 1s linear;
+	-moz-transition: opacity 1s linear;
+	-webkit-transition: opacity 1s linear;
+	-o-transition: opacity 1s linear;
+}
+#descriptions .info:target{
+    opacity: 1;
+    height: auto;
+	padding: 3rem 5rem;
+	background: #FFFFFF;	
+	border-radius: 0%;
+	border: solid 0px #000000; 
+    text-align: center;
+}
+
+
+table {			
+    border-collapse: collapse;
+    margin-right: auto; 
+    margin-left: auto;
+}
+table, th, td {			
+	padding: 8px;
+    border: 1.5px solid black;
+	font-size: 2.2rem;
+}
+
+.thead {
+    background:#E6E6E6;
+    font-weight: bolder;
+
+}
+
+
+#container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 5em;
+}
+#container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.row{
+	width: 100%;
+	display: block;
+}
+.row span{
+	float: left;
+}
+
+
+#f-block span{
+	float: left;
+}
+.element{
+	padding: 4.5px 3px;
+	width: 50%;
+	height: 5%;
+}
+.row span{
+	display: block;
+}
+
+
+@media only screen and (min-width : 768px) {
+	.element{
+		width: 5.555%;
+		height: 7rem;
+	}
+	#f-block{
+		margin-top: 35px;
+	}
+	.span-15{   
+		width: 83.325%;
+		height: 1.2px;
+	}
+	.span-9{   
+		width: 50.000%;
+		height: 1.2px;
+	}
+	.span-16{  
+		width: 88.887%;
+		height: 1.2px;
+	}
+	.span-10{   
+		width: 55.555%;
+		height: 1.2px;
+	}
+	.span-3{   
+		width: 16.667%;
+		height: 1.2px;
+	}
+	.span-2{   
+		width: 11.111%;
+		height: 1.2px;
+	}
+	.span-1{   
+		width: 5.555%;
+		height: 1.5px;
+	}
+}
+
+
+.element a{
+	border-radius: .4rem;
+	text-align: center;
+	color: #333;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 1rem 0;
+	text-decoration: none;
+}
+
+.swatch{
+	width: 2rem;
+	height: 2rem;
+	border: solid 1px #777;
+	display: inline-block;
+}
+
+.swatch.table,
+.element.table a{
+	background:#FFCA22;			
+}
+
+.swatch.empty,
+.element.empty a{
+	background:#999999;			
+}
+
+
+.links{
+	text-align: center;
+    font-size: 2rem; 
+    font-family: "Lucida Console", "Courier New", monospace;
+    white-space:nowrap;
+    padding: 6rem 6rem auto auto;
+    margin: 4rem 4rem auto auto;
+    
+}
+.links li {
+	display: inline;
+    margin: 6rem 6rem auto auto;
+}
+
+
+.key{
+	line-height: 3.2rem;
+	margin: 2rem auto;
+	width: 50%;
+	padding: 5px 0 0 0;
+	list-style-type: none;
+	text-align: center;
+    font-size: 3.2rem;
+    
+}
+.key li {
+	display: inline-block;
+	margin: 0 .2rem;
+}
+
+
+h1{
+	text-align: center;
+	font-size: 5rem;
+	color: #000000;
+}
+.by{
+	text-align: center;
+	font-size: 1.8rem;
+	color: #FFF;
+}
+.by a{
+	color: #CCC;
+}
+
+
+h2{
+	text-align: center;
+	font-size: 2.5rem;
+	color: #000000;
+}
+.by{
+	text-align: center;
+	font-size: 2.5rem;
+	color: #FFF;
+}
+.by a{
+	color: #CCC;
+}
+
+
+h3{
+	text-align: center;
+	font-size: 3.5rem;
+	color: #000000;
+}
+
+p{
+	font-size: 2.2rem;
+	color: #000000;
+}
+
+
+h4{
+	font-family: "Times New Roman", Times, serif;
+    text-align: center;
+	font-size: 2rem;
+    font-style:italic;
+	color: #CCCCCC;
+    margin: auto;
+	padding: 1%;
+}
+.by{
+	text-align: center;
+	font-size: 2rem;
+    font-style:italic;
+	color: #CCC;
+}
+.by a{
+	color: #CCC;
+}
